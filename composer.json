@@ -1,0 +1,34 @@
+{
+    "name": "dhireshbudhiraja/laravelsso",
+    "description": "Simple PHP SSO integration for Laravel",
+    "license": "MIT",
+    "keywords": ["laravel", "sso", "authentication", "login"],
+    "homepage": "https://github.com/dhireshbudhiraja/laravelsso",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Dhiresh Budhiraja",
+            "email": "dhireshbudhiraja@gmail.com",
+            "homepage": "https://github.com/dhireshbudhiraja",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.3",
+        "guzzlehttp/guzzle": "^6.3",
+        "laravel/framework": "^7.0",
+        "zefy/php-simple-sso": "^1.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "DhireshBudhiraja\\LaravelSSO\\": "src/"
+      }
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+            "DhireshBudhiraja\\LaravelSSO\\SSOServiceProvider"
+        ]
+      }
+    }
+}
